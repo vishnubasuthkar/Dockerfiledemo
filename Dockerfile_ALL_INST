@@ -1,0 +1,24 @@
+FROM ubuntu
+MAINTAINER vishnu abcd@gmail.com
+#RUN apt-get update && apt-get install wget git -y
+
+
+WORKDIR /test/t1
+
+RUN touch ./a.txt ./b.txt
+
+RUN mkdir /test/t2/
+
+WORKDIR /test/t2
+RUN touch ./c.txt ./d.txt
+
+
+
+#CMD ["echo","hello docker"]
+#ENTRYPOINT ["echo","hello vishnu"]
+#RUN mkdir test work
+#COPY ./Dockerfile test
+#ADD https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.56/bin/apache-tomcat-9.0.56.zip work
+#ARG fullname=vishnubasutkar
+#ENV Uname=${fullname}
+#ENV Password=asdf
