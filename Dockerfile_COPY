@@ -1,0 +1,7 @@
+# copy files from local instance to running container
+# 0653841058bb-->containerID, DockerFile-->filename
+docker cp Dockerfile 0653841058bb:/DockerFile
+
+# copy files from running container to local instance
+# 0653841058bb-->containerID, t1-->file which is in running container,t2 --->name given to file to copy from running container to local instance.
+docker cp 0653841058bb:/t1 t2
