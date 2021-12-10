@@ -1,0 +1,7 @@
+FROM alpine
+MAINTAINER vishnu
+RUN addgroup -S user2
+RUN adduser -S user2 -G user2
+USER user2
+WORKDIR /sample
+COPY . /sample
